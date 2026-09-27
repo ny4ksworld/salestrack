@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* ─── SalesTrack Global Styles ───────────────────────────────────────────────
+   Clean business software look:
+   - White/light neutral background (#f8f9fb)
+   - One restrained primary: blue-600 (#2563eb)
+   - Good typography, consistent spacing
+   - Subtle borders (#e5e7eb), mild shadows
+   - Moderate border-radius (rounded-lg = 8px)
+   No gradients, no glow, no glassmorphism.
+──────────────────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fb;
+  color: #1f2328;
+  font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
